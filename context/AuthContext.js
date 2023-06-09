@@ -3,7 +3,7 @@ import { NEXT_BACKEND_URL } from '../config/app'
 
 const AuthContext = createContext()
 
-const AuthContextProvider = ({ children }) => {
+export const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [authError, setAuthError] = useState(null)
     const [authReady, setAuthReady] = useState(false)
@@ -84,4 +84,4 @@ const AuthContextProvider = ({ children }) => {
   )
 }
 
-export default AuthContextProvider
+export default AuthContext
